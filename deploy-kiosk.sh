@@ -37,3 +37,5 @@ cp pandora-box.desktop /home/$PANDORA_USER/.config/autostart/pandora-box.desktop
 chown $PANDORA_USER:$PANDORA_USER /home/$PANDORA_USER/.config/autostart/pandora-box.desktop
 
 echo "--- Déploiement Terminé. Redémarrage requis pour appliquer les changements. ---"
+
+#modif pour permission
