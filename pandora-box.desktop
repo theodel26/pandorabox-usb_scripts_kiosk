@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+# Exécute le script que nous venons de créer
+Exec=gnome-terminal --full-screen -- bash -c "/home/pandoraa/start-pandora.sh; exec bash"
+Hidden=false
+NoDisplay=false
+X-GNOME-Autostart-enabled=true
+Name=Pandora Box Kiosk
+Comment=Lance la borne d'analyse USB Pandora Box
