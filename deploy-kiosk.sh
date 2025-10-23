@@ -15,9 +15,9 @@ echo "--- Démarrage du déploiement de la configuration Kiosk ---"
 echo "1. Déplacement des scripts d'exécution..."
 
 # Script d'exécution (doit être exécutable)
-cp start-pandora.sh /home/$PANDORA_USER/pandora-box/start-pandora.sh
-chmod +x /home/$PANDORA_USER/pandora-box/start-pandora.sh
-chown $PANDORA_USER:$PANDORA_USER /home/$PANDORA_USER/pandora-box/start-pandora.sh
+cp start-pandora.sh /home/$PANDORA_USER/start-pandora.sh
+chmod +x /home/$PANDORA_USER/start-pandora.sh
+chown $PANDORA_USER:$PANDORA_USER /home/$PANDORA_USER/start-pandora.sh
 
 # Script de surveillance (doit être exécutable)
 cp fullscreen_watcher.sh /home/$PANDORA_USER/pandora-box/fullscreen_watcher.sh
