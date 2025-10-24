@@ -2,6 +2,8 @@
 
 First start by installing pandora-box : https://github.com/dbarzin/pandora-box
 
+<h3>Kiosk mode configuration</h3>
+
 Enable autologin with sudo nano /etc/gdm3/custom.conf :
 
 [daemon]  
