@@ -17,4 +17,4 @@ And enter the following commands on the terminal :
 - sudo reboot
 
 Pandora-box will now be full screen without title bar !  
-IHM limited for more security !!
+HMI limited for more security !!
