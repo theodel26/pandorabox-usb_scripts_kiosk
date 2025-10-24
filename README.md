@@ -1,4 +1,4 @@
-<h2>Set up kiosk mode (after installing pandora-box)</h2>
+<h2>Set up graphical kiosk mode (after installing pandora-box)</h2>
 
 Enable autologin with sudo nano /etc/gdm3/custom.conf :
 
