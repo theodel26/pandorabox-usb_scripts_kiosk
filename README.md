@@ -16,5 +16,5 @@ And enter the following commands on the terminal :
 - sudo ./deploy-kiosk.sh (after replacing "user" with the correct user in the script)
 - sudo reboot
 
-Pandora-box will now be full screen without title bar !
+Pandora-box will now be full screen without title bar !  
 IHM limited for more security !!
