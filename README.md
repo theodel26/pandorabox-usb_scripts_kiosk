@@ -15,7 +15,7 @@ And enter the following commands on the terminal :
 - sudo apt install -y git
 - cd /home/pandora
 - git clone https://github.com/theodel26/pandorabox-usb_scripts_kiosk
-- cd /home/user/pandorabox-usb_scripts_kiosk
+- cd /home/pandora/pandorabox-usb_scripts_kiosk
 - git pull
 - sudo ./deploy-kiosk.sh (after replacing "pandora" with the correct user in PANDORA_USER)
 - sudo reboot
