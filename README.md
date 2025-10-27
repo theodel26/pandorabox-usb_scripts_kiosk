@@ -20,5 +20,8 @@ And enter the following commands on the terminal :
 - sudo ./deploy-kiosk.sh (after replacing "pandora" with the correct user in PANDORA_USER)
 - sudo reboot
 
+<b>WARNING</b> : The pandora-box.desktop and start-pandora.sh scripts have the parent directory as /home/pandora by default.  
+This will need to be changed if the username is not "pandora" !
+
 Pandora-box will now be full screen without title bar !  
 HMI limited for more security !!
