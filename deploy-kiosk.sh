@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # VÉRIFIEZ ET DÉFINISSEZ LE NOM DE L'UTILISATEUR ICI
-PANDORA_USER="user"
+PANDORA_USER="pandora"
 
 # Vérifier si l'utilisateur est root (nécessaire pour les droits)
 if [ "$EUID" -ne 0 ]; then 
