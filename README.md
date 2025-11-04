@@ -8,7 +8,7 @@ Enable autologin with sudo nano /etc/gdm3/custom.conf :
 
 [daemon]  
 AutomaticLoginEnable = True  
-AutomaticLogin = pandora  
+AutomaticLogin = pandora  (or the corresponding user)
 
 And enter the following commands on the terminal :
 
