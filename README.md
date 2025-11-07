@@ -22,6 +22,8 @@ And enter the following commands on the terminal :
   <b>WARNING</b> : 
 The pandora-box.desktop and start-pandora.sh scripts use the parent directory /home/pandora by default. You will also need to modify the directories in these files before restarting the machine if the username is not "pandora" !
 
+   *Example: If the user is “pandoraa”, use /home/<b>pandoraa</b> instead of /home/<b>pandora</b>*
+
 - sudo reboot
 
 Pandora-box will now be full screen without title bar !  
