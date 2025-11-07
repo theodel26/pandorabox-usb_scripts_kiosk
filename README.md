@@ -17,10 +17,10 @@ And enter the following commands on the terminal :
 - git clone https://github.com/theodel26/pandorabox-usb_scripts_kiosk
 - cd /home/pandora/pandorabox-usb_scripts_kiosk
 - git pull
-- sudo ./deploy-kiosk.sh (Before entering the command, ensure that the correct user is configured in the script)  
+- sudo ./deploy-kiosk.sh (before entering the command, ensure that the correct user is configured in the script)  
 
   <b>WARNING</b> : 
-The pandora-box.desktop and start-pandora.sh scripts use the parent directory /home/pandora by default. You will also need to modify the directories in these files before restarting the machine if the username is not "pandora"!
+The pandora-box.desktop and start-pandora.sh scripts use the parent directory /home/pandora by default. You will also need to modify the directories in these files before restarting the machine if the username is not "pandora" !
 
 - sudo reboot
 
