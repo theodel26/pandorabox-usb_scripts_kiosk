@@ -1,15 +1,14 @@
 #!/bin/bash
 
 # Déplacez-vous dans le répertoire de l'application
-cd /home/pandora/pandora-box
+cd $HOME/pandora-box
 
 # 1. Lancer PandoraBox en arrière-plan
-/home/pandora/.local/bin/python3 /home/pandora/pandora-box/pandora-box.py &
+$HOME/.local/bin/python3 $HOME/pandora-box/pandora-box.py &
 PANDORA_PID=$!
 
 # 2. Lancer le script de surveillance en arrière-plan
-# Il surveillera et corrigera le plein écran en continu
-/home/pandora/pandora-box/fullscreen_watcher.sh &
+$HOME/pandora-box/fullscreen_watcher.sh &
 WATCHER_PID=$!
 
 # 3. Attendre que PandoraBox se termine.
