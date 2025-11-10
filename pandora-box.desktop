@@ -1,7 +1,7 @@
 [Desktop Entry]
 Type=Application
 # Exécute le script que nous venons de créer
-Exec=gnome-terminal --full-screen -- bash -c "/home/pandora/start-pandora.sh; exec bash"
+Exec=gnome-terminal --full-screen -- bash -c "$HOME/start-pandora.sh; exec bash"
 Hidden=false
 NoDisplay=false
 X-GNOME-Autostart-enabled=true
