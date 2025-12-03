@@ -21,7 +21,7 @@ And enter the following commands on the terminal :
 
 The startup script start-pandora.sh includes a fallback mechanism in case the Pandora service crashes on startup, displaying the maintenance.png image to keep kiosk mode active.  
 Only three actions are required for this to work : 
-- apt install feh -y (installs the display software)
+- sudo apt install feh -y (installs the display software)
 - sudo mv /home/pandora/pandorabox-usb_scripts_kiosk/maintenance.png /home/pandora/pandora-box/images (moves the image to the correct directory)
 - sudo visudo -f /etc/sudoers.d/display
   
