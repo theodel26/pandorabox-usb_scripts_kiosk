@@ -3,6 +3,16 @@
 # Déplacez-vous dans le répertoire de l'application
 cd $HOME/pandora-box
 
+#Décommenter les lignes ci-dessous en cas de soucis avec un écran tactile
+#export DISPLAY=:0
+#xinput disable 11
+#xinput disable 12
+
+#export GTK_IM_MODULE=none
+#export QT_IM_MODULE=none
+#export CLUTTER_IM_MODULE=none
+#export XMODIFIERS="@im=none"
+
 GNOME_SHELL_PID=$(pgrep gnome-shell -u pandoraa | head -n 1)
 
 if [ ! -z "$GNOME_SHELL_PID" ]; then
