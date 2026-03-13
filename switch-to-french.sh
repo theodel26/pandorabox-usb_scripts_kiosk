@@ -8,7 +8,7 @@ DEST_DIR="/home/$PANDORA_USER/pandora-box/images"
 # Liste des images à remplacer
 IMAGES=("bad.png" "ok.png" "key1.png" "key2.png" "key3.png" "key4.png" "key5.png" "wait1.png" "wait2.png" "wait3.png" "wait4.png" "wait5.png" "wait6.png" "wait7.png" "wait8.png" "wait9.png")
 
-echo "--- Bascule de la borne en ANGLAIS ---"
+echo "--- Bascule de la borne en FRANCAIS ---"
 
 # Boucle pour remplacer les images de l'interface
 for img in "${IMAGES[@]}"; do
