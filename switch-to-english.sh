@@ -10,16 +10,27 @@ IMAGES=("bad.png" "ok.png" "key1.png" "key2.png" "key3.png" "key4.png" "key5.png
 
 echo "--- Bascule de la borne en ANGLAIS ---"
 
+# Boucle pour remplacer les images de l'interface
 for img in "${IMAGES[@]}"; do
     if [ -f "$SOURCE_DIR/$img" ]; then
         echo "Remplacement de $img..."
-        # Le 'mv' écrase automatiquement l'ancien fichier dans la destination
-        sudo mv "$SOURCE_DIR/$img" "$DEST_DIR/$img"
+        # On utilise cp pour garder la source intacte
+        sudo cp "$SOURCE_DIR/$img" "$DEST_DIR/$img"
         # On remet les droits à l'utilisateur de la borne
         sudo chown $PANDORA_USER:$PANDORA_USER "$DEST_DIR/$img"
     else
         echo "Erreur : $img introuvable dans la source."
     fi
 done
+
+# Remplacement spécifique pour l'image de maintenance
+echo "Remplacement de l'image de maintenance..."
+if [ -f "$SOURCE_DIR/maintenance-eng.png" ]; then
+    sudo cp "$SOURCE_DIR/maintenance-eng.png" "$DEST_DIR/maintenance.png"
+    # On n'oublie pas les droits ici non plus !
+    sudo chown $PANDORA_USER:$PANDORA_USER "$DEST_DIR/maintenance.png"
+else
+    echo "Erreur : maintenance-eng.png introuvable."
+fi
 
 echo "Terminé. Veuillez redémarrer la borne pour appliquer les changements."
